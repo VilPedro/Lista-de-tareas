@@ -1,12 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+📝 To-Do List
+Aplicación de lista de tareas desarrollada con React y Tailwind CSS. Permite a los usuarios agregar, marcar como completadas y eliminar tareas de manera intuitiva con una interfaz minimalista y responsiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologías utilizadas
+⚛️ React.js - Para la estructura y lógica de la aplicación
+🎨 Tailwind CSS - Para estilos rápidos y responsivos
+🛠️ Vite  - Para un entorno de desarrollo más rápido
+💾 LocalStorage - Para persistencia de datos 
+📦 Instalación
+Clonar el repositorio:
+git clone https://github.com/VilPedro/Lista-de-tareas
+cd Lista-de-tareas
+Instalar dependencias:
+npm install
+Ejecutar la aplicación en modo desarrollo:
+npm run dev
+Abrir en el navegador: http://localhost:5173 (o el puerto que indique Vite)
+📸 Capturas
+![Lista de tareas](assets/ListaTareas.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Funcionalidades
+✔️ Agregar nuevas tareas
+✔️ Marcar tareas como completadas
+✔️ Eliminar tareas
+✔️ Persistencia en LocalStorage 
+✔️ Diseño responsive con Tailwind
