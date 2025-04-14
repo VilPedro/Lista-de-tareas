@@ -1,18 +1,14 @@
-import Trash from './icons/trash';
+
+import { CheckCircle2, Circle, Trash2 } from "lucide-react"
 
 function Task({ task, toggleTaskCompletion, deleteTask }) {
     return (
-      <div className="flex items-center justify-between py-3 px-2 hover:bg-gray-700 rounded">
+      <div className="flex items-center gap-3 p-4 bg-[#1A1A25] rounded-lg group hover:bg-[#1E1E2C] transition-all border-l-4 border-transparent hover:border-l-[#4C2A6A]">
         <div className="flex items-center gap-3">
           <button
             onClick={() => toggleTaskCompletion(task.id)}
-            className={`h-6 w-6 flex items-center justify-center rounded-sm border ${
-              task.completed
-                ? "bg-blue-600 border-blue-600 text-white hover:bg-blue-700"
-                : "bg-gray-700 border-gray-600 hover:bg-gray-600"
-            }`}
-          >
-            {task.completed && "✔"}
+            className={`text-[#4C2A6A] hover:text-[#7C4DBA] transition-colors`}
+          >{task.completed ? <CheckCircle2 size={22} className="text-[#7C4DBA]" /> : <Circle size={22} />}
           </button>
   
           <span className={`${task.completed ? "text-gray-400 line-through" : "text-gray-100"}`}>
@@ -22,10 +18,10 @@ function Task({ task, toggleTaskCompletion, deleteTask }) {
   
         <button
           onClick={() => deleteTask(task.id)}
-          className="p-0 bg-transparent border-none outline-none shadow-none"
+          className="text-gray-500  hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all "
           style={{ background: "none", border: "none", boxShadow: "none" }}
         >
-          <Trash />
+          <Trash2 size={18} />
         </button>
       </div>
     );

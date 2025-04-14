@@ -49,14 +49,14 @@ function TodoList() {
   const completedCount = tasks.filter((task) => task.completed).length;
 
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
-      <div className="border border-gray-700 bg-gray-800 shadow-xl rounded-lg">
+    <div className="flex justify-center items-center min-h-screen bg-[#0F0F13] p-4">
+      <div className="w-full max-w-md rounded-xl overflow-hidden shadow-[0_0_30px_rgba(88,28,135,0.2)]">
         <Header />
-        <div className="p-6">
+        <div className="bg-[#151520] p-6">
           <TaskForm newTask={newTask} setNewTask={setNewTask} handleSubmit={handleSubmit} />
           <TaskList tasks={tasks} toggleTaskCompletion={toggleTaskCompletion} handleDelete={handleDelete} />
-          <TaskCount tasks={tasks} completedCount={completedCount} />
         </div>
+        <TaskCount tasks={tasks} completedCount={completedCount} />
       </div>
     </div>
   );

@@ -6,11 +6,11 @@ function TaskForm({ newTask, setNewTask, handleSubmit }) {
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
           placeholder="Escribe una tarea"
-          className="flex-grow bg-gray-700 border border-gray-600 text-gray-100 placeholder-gray-400 focus:ring-2 focus:ring-blue-600 p-2 rounded"
+          className="flex-1 px-4 py-3 rounded-lg bg-[#1E1E2C] text-white border border-[#2D1842] focus:outline-none focus:border-[#4C2A6A] transition-all placeholder:text-gray-500"
         />
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+          className="px-4 py-3 bg-[#4C2A6A] hover:bg-[#5D3580] text-white rounded-lg flex items-center gap-1 transition-colors"
         >
           Agregar
         </button>
