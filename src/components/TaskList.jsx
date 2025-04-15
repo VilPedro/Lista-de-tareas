@@ -12,7 +12,7 @@ function TaskList({ tasks, toggleTaskCompletion, handleDelete }) {
                 <div className="flex items-center gap-3 flex-1">
                   <button
                     onClick={() => toggleTaskCompletion(task.id)}
-                    className={`h-6 w-6 flex items-center justify-center rounded-full transition-colors ${
+                    className={`cursor-pointer h-6 w-6 flex items-center justify-center rounded-full transition-colors ${
                       task.completed
                         ? "bg-[#4C2A6A] text-white hover:bg-[#5D3580]"
                         : "border-2 border-[#4C2A6A] hover:border-[#7C4DBA]"
@@ -28,7 +28,7 @@ function TaskList({ tasks, toggleTaskCompletion, handleDelete }) {
 
                 <button
                   onClick={() => handleDelete(task.id)}
-                  className="text-gray-500 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all p-1 rounded-full hover:bg-[#2A2A35]"
+                  className="cursor-pointer text-gray-500 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all p-1 rounded-full hover:bg-[#2A2A35]"
                 >
                   <Trash />
                 </button>

@@ -10,7 +10,7 @@ function TaskForm({ newTask, setNewTask, handleSubmit }) {
         />
         <button
           type="submit"
-          className="px-4 py-3 bg-[#4C2A6A] hover:bg-[#5D3580] text-white rounded-lg flex items-center gap-1 transition-colors"
+          className="cursor-pointer px-4 py-3 bg-[#4C2A6A] hover:bg-[#5D3580] text-white rounded-lg flex items-center gap-1 transition-colors"
         >
           Agregar
         </button>
